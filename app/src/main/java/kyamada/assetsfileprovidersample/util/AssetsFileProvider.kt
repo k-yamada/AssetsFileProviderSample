@@ -14,7 +14,7 @@ class AssetsFileProvider : ContentProvider() {
     @Throws(FileNotFoundException::class)
     override fun openAssetFile(uri: Uri, mode: String): AssetFileDescriptor {
         try {
-            return context!!.assets.openFd(uri.lastPathSegment)
+            return context!!.assets.openFd(uri.pathSegments.joinToString("/"))
         } catch (e: IOException) {
             e.printStackTrace()
             throw FileNotFoundException(e.message)
