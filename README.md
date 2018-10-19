@@ -6,7 +6,9 @@
 # プロジェクト作成手順
 
 1. 以下の手順で、Assetsフォルダを作成します。
-Android StudioのメニューバーのFile > New > Folder > Assets Folder
+
+- Android StudioのメニューバーのFile > New > Folder > Assets Folder
+
 2. `assets/pdf/sample.pdf`に適当なpdfファイルを配置します
 3. utilディレクトリに`AssetsFileProvider.kt`を作成します。
 
